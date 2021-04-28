@@ -96,7 +96,7 @@ async function handle_load(pdf, options, page_num) {
 }
 
 function display(image) {
-  const markup = `<img src="${image}" height="300px" />`;
   const preview = document.querySelector("#root");
+  const markup = `<img src="${image}" height="300px" />`;
   preview.innerHTML += markup;
 }

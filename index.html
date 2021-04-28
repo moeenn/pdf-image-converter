@@ -19,6 +19,10 @@
       box-shadow: 0.1rem 0.2rem 0.3rem rgb(0 0 0 / 10%);
     }
 
+    #preview {
+      display: none;
+    }
+
     #root {
       display: flex;
       flex-wrap: wrap;
@@ -31,7 +35,7 @@
 <body>
 
   <input type="file" name="pdf_file" id="pdf_file" accept=".pdf" />
-  <canvas id="preview" style="display: none;"></canvas>
+  <canvas id="preview"></canvas>
   <div id="root"></div>
 
 </body>

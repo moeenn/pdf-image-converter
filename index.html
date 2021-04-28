@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script type="text/javascript" src="./lib/pdf.js"></script>
+  <script type="text/javascript" src="index.js"></script>
+  <title>Document</title>
+  <style>
+    body {
+      padding: 1rem;
+    }
+    
+    img {
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 0.4rem;
+      box-shadow: 0.1rem 0.2rem 0.3rem rgb(0 0 0 / 10%);
+    }
+
+    #root {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      padding: 2rem 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <input type="file" name="pdf_file" id="pdf_file" accept=".pdf" />
+  <canvas id="preview" style="display: none;"></canvas>
+  <div id="root"></div>
+
+</body>
+
+</html>
